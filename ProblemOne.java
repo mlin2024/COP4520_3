@@ -43,7 +43,7 @@ public class ProblemOne {
                 int randomServant = (int) (Math.random() * numServants);
                 int randomPresent = (int) (Math.random() * numPresents);
                 boolean inList = threads[randomServant].checkForPresent(randomPresent);
-                //writer.write("2 " + randomPresent + " " + (inList ? "1" : "0") + "\n");
+                writer.write("2 " + randomPresent + " " + (inList ? "1" : "0") + "\n");
             }
 
             // Get the total number of thank-you notes written

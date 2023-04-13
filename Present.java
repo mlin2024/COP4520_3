@@ -50,11 +50,11 @@ public class Present {
             // If we're at the last element, we have to add it here
             if (next == null) {
                 next = present;
-                /*try {
+                try {
                     writer.write("0 " + present.getNum() + "\n");
                 } catch (IOException e) {
                     e.getStackTrace();
-                }*/
+                }
                 return true;
             }
 
@@ -89,11 +89,11 @@ public class Present {
         // Set the new first present to be the present after the one we're removing
         next = present.getNext();
 
-        /*try {
+        try {
             writer.write("1 " + present.getNum() + "\n");
         } catch (IOException e) {
             e.getStackTrace();
-        }*/
+        }
     }
 
     // Recursive method to check if a present exists in the list
